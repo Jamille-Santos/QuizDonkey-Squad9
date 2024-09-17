@@ -1,0 +1,7 @@
+#elemento-coluna{
+    background-color: blue;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
