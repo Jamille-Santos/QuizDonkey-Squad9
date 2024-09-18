@@ -1,5 +1,6 @@
 #elemento-coluna{
     background-color: blue;
+    color: #f4f4f4;
     width: 400px;
     height: 500px;
     display: flex;
