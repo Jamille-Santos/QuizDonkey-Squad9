@@ -3,37 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/index.css">
     <title>DONKEY</title>
 </head>
 <body>
 
-    <div class="quiz-home">
-    <section id="inicio">
-        <img src="#" alt="mascote squad9, donkey">
-        <!--ADICIONAR IMAGEM DO DONKEY-->   
-        <br>
-        <div class="texto">
-            <p>REGRAS DO JOGO</p>
+    <div class="container">
+        <div class="quiz-home">
+            <section id="inicio">
+                <p>Bem Vindo ao</p>
+                <h2>QUIZ DONKEY</h2>
+                <img src="/assets/img/1Aburrointeligente.png" alt="mascote squad9, donkey" width="200px" height="200px">
+                <!--ADICIONAR IMAGEM DO DONKEY-->   
+                <br>
+                <div class="texto">
+                    <p>REGRAS DO JOGO</p>
+                </div>
+                <!--ADICIONAR AS REGRAS DO JOGO-->
+                <button id="inicio-btn">INICIAR</button>    
+            </section>
         </div>
-            <!--ADICIONAR AS REGRAS DO JOGO-->
-        </div>
-        <button id="inicio-btn">INICIAR</button>    
+
+        <!-- pagina de escolha do tema -->
+        <section id="escolha-tema">
+            <div>
+                <!-- Conteúdo da escolha de tema -->
+            </div>
+            <button id="escolha-tema-btn">Continuar</button>
+        </section>
+
+        <!-- pagina do quiz -->
+        <section id="quiz">
+            <div id="perguntas"></div> <!-- onde as perguntas aparecem -->
+            <button id="quiz-btn">PERGUNTAS</button>
+        </section>
     </div>
-    </section>
-<!-- pagina de escolha do tema -->
-    <section id="escolha-tema" class="">
-        <div>
-    
-        </div>
-        <button id="">Continuar</button>
-    </section>
-    <!-- pagina do quiz -->
-     <section id="quiz" class="">
-
-        <div id="perguntas"></div> <!-- onde as perguntas aparecem -->
-        <button id="" class=""></button>
-
-     </section>
 
     <script src="JS/home.js"></script>
     <script src="JS/perguntas.js"></script>

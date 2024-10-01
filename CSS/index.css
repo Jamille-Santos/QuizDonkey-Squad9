@@ -1,27 +1,116 @@
+/* Fonte geral */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
-* {
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', 'Roboto', 'Source Sans Pro', Arial, sans-serif;
+    background-color: #C7AA79;
+    color: #2F2620; /* Cor do texto principal */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-image: url(/assets/img/1Aburrointeligente.png);
-    width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #f4f4f4;
+    min-height: 100vh;
 }
 
-#elemento-coluna{
-    background-color: blue;
-    color: #f4f4f4;
-    width: 400px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: url("/assets/img/salaDeAula.jpg");
+    
+    border-radius: 10px;
+    text-align: center;
 }
 
+/* Estilos para a seção inicial */
+.quiz-home img {
+    border: 2px solid #C7AA79; /* Borda da imagem */
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.quiz-home .texto p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #C7AA79; /* Cor do texto das regras */
+}
+
+#inicio-btn {
+    background-color: #2F2620; /* Cor do botão */
+    color: #F5F5F5; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#inicio-btn:hover {
+    background-color: #C7AA79; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos para a seção de escolha de tema */
+#escolha-tema {
+    padding: 20px;
+}
+
+#escolha-tema button {
+    background-color: #2F2620; /* Cor do botão */
+    color: #F5F5F5; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#escolha-tema button:hover {
+    background-color: #C7AA79; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos para a seção do quiz */
+#quiz {
+    padding: 20px;
+}
+
+#quiz #perguntas {
+    margin-bottom: 20px;
+}
+
+#quiz button {
+    background-color: #2F2620; /* Cor do botão */
+    color: #F5F5F5; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#quiz button:hover {
+    background-color: #C7AA79; /* Cor do botão ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #inicio-btn, #escolha-tema button, #quiz button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .quiz-home .texto p {
+        font-size: 20px;
+    }
+}
