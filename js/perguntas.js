@@ -12,7 +12,12 @@ function loadPerguntas(tema) {
         perguntas = [
             { pergunta: "Quem ganhou a Copa do Mundo de 2018?", opcoes: ["Alemanha", "Brasil", "França", "Argentina"], correta: 2 },
             { pergunta: "Qual jogador tem o maior número de Bolas de Ouro?", opcoes: ["Pelé", "Cristiano Ronaldo", "Lionel Messi", "Zidane"], correta: 2 },
-            { pergunta: "Em que ano foi realizada a primeira Copa do Mundo?", opcoes: ["1930", "1940", "1950", "1960"], correta: 0 }
+            { pergunta: "Em que ano foi realizada a primeira Copa do Mundo?", opcoes: ["1930", "1940", "1950", "1960"], correta: 0 },
+            
+            { pergunta: "Quando o gigantesco BOTAFOGO foi campeão brasileiro pela última vez?", opcoes: ["1997", "2000", " 1995", "1999"], correta: 2 },
+            { pergunta: "Qual foi o motivo para o segundo uniforme do Brasil ser azul?", opcoes: ["Por causa do céu azul", "Por causa da nossa senhora aparecida", "Por causa do hino do nacional", "por causa do Cruzeiro"], correta: 1},
+            { pergunta: "Quem é o maior artilheiro da seleção brasileira?", opcoes: ["Ronaldo", "Pelé", "Romário", "Neymar "], correta: 3 }
+            
         ];
     } else if (tema === "tema-3") {
         perguntas = [
@@ -28,16 +33,11 @@ function loadPerguntas(tema) {
         ];
     }else if (tema === "tema-5") {
         perguntas = [
-            { pergunta: "1", opcoes: ["Lex Luthor", "Coringa", "Duas-Caras", "Thanos"], correta: 1 },
-            { pergunta: "2", opcoes: ["Asgard", "Xandar", "Torre Dos Vingadores", "Gothan City"], correta: 2},
-            { pergunta: "3", opcoes: ["Marta", "Virgil", "Norberto", "Archie"], correta: 1 }
+            { pergunta: "1", opcoes: ["1997", "2000", " 1995", "1999"], correta: 2 },
+            { pergunta: "2", opcoes: ["Por causa do céu azul", "Por causa da nossa senhora aparecida", "Por causa do hino do nacional", "por causa do Cruzeiro"], correta: 1},
+            { pergunta: "3", opcoes: ["Ronaldo", "Pelé", "Romário", "Neymar "], correta: 3 }
         ];
-    } else if (tema === "tema-6") {
-        perguntas = [
-            { pergunta: "1", opcoes: ["Lex Luthor", "Coringa", "Duas-Caras", "Thanos"], correta: 1 },
-            { pergunta: "2", opcoes: ["Asgard", "Xandar", "Torre Dos Vingadores", "Gothan City"], correta: 2},
-            { pergunta: "3", opcoes: ["Marta", "Virgil", "Norberto", "Archie"], correta: 1 }
-        ];
+   
     }
     
     }
