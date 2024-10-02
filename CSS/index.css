@@ -33,7 +33,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 100vh;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: url("/assets/img/salaDeAula.jpg") no-repeat center center/cover;
@@ -118,7 +118,7 @@ body {
 @media (max-width: 768px) {
     .container {
         padding: 10px;
-        height: auto;/* Ajuste para que a altura seja flexível em telas menores */
+        height: 100%;/* Ajuste para que a altura seja flexível em telas menores */
     }
 
     #inicio-btn, #escolha-tema button, #quiz button {
@@ -131,3 +131,6 @@ body {
     }
 }
 
+.esconder{
+    display: none;
+}
