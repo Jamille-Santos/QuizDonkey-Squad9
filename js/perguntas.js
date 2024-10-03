@@ -4,12 +4,6 @@ let perguntas = [];
 function loadPerguntas(tema) {
     if (tema === "tema-1") {
         perguntas = [
-            { pergunta: "Qual é o maior oceano da Terra?", opcoes: ["Atlântico", "Pacífico", "Índico", "Ártico"], correta: 1 },
-            { pergunta: "Quem pintou a Mona Lisa?", opcoes: ["Michelangelo", "Da Vinci", "Van Gogh", "Picasso"], correta: 1 },
-            { pergunta: "Qual é a capital da França?", opcoes: ["Londres", "Paris", "Roma", "Berlim"], correta: 1 }
-        ];
-    } else if (tema === "tema-2") {
-        perguntas = [
             { pergunta: "Quem ganhou a Copa do Mundo de 2018?", opcoes: ["Alemanha", "Brasil", "França", "Argentina"], correta: 2 },
             { pergunta: "Qual jogador tem o maior número de Bolas de Ouro?", opcoes: ["Pelé", "Cristiano Ronaldo", "Lionel Messi", "Zidane"], correta: 2 },
             { pergunta: "Em que ano foi realizada a primeira Copa do Mundo?", opcoes: ["1930", "1940", "1950", "1960"], correta: 0 },
@@ -17,6 +11,16 @@ function loadPerguntas(tema) {
             { pergunta: "Quando o gigantesco BOTAFOGO foi campeão brasileiro pela última vez?", opcoes: ["1997", "2000", " 1995", "1999"], correta: 2 },
             { pergunta: "Qual foi o motivo para o segundo uniforme do Brasil ser azul?", opcoes: ["Por causa do céu azul", "Por causa da nossa senhora aparecida", "Por causa do hino do nacional", "por causa do Cruzeiro"], correta: 1},
             { pergunta: "Quem é o maior artilheiro da seleção brasileira?", opcoes: ["Ronaldo", "Pelé", "Romário", "Neymar "], correta: 3 }
+                    ];
+    } else if (tema === "tema-2") {
+        perguntas = [
+            { pergunta: "Qual foi a primeira empresa a lançar um smartphone?", opcoes: ["A) Apple", "B) Nokia", "C) BlackBerry", "D) Motorola"], correta: 2 },
+            { pergunta: "Quem inventou a World Wide Web (WWW)?", opcoes: ["A) Bill Gates", "B) Steve Jobs", "C) Tim Berners-Lee", "D) Mark Zuckerberg"], correta: 2 },
+            { pergunta: "Qual empresa criou o primeiro processador comercial?", opcoes: ["A) Intel", "B) AMD", "C) IBM", "D) Microsoft"], correta: 0 },
+            
+            { pergunta: "Qual foi o primeiro veículo elétrico de produção em massa?", opcoes: ["A) Nissan Leaf", "B) Tesla Model S", "C) Chevrolet Volt", "D) Toyota Prius"], correta: 0},
+            { pergunta: "Qual tecnologia está por trás das criptomoedas como o Bitcoin?", opcoes: ["A)Inteligência Artificial", "B) Blockchain", "C) Computação Quântica", "D) Cloud Computing"], correta: 1},
+            { pergunta: "Quem é considerado o ¨pai¨ da Inteligência Artificial moderna?", opcoes: ["A) Alan Turing", "B) John McCarthy", "C) Elon Musk", "D) Steve Jobs"], correta: 1 }
             
         ];
     } else if (tema === "tema-3") {

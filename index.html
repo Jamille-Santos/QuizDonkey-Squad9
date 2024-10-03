@@ -8,43 +8,63 @@
 </head>
 <body>
 
+    <header>
+        <button id="squad9-btn">Squad9</button>
+    </header>
+
     <div class="container">
         <div class="quiz-home">
             <section id="inicio">
                 <p>Bem Vindo ao</p>
                 <h2>QUIZ DONKEY</h2>
                 <img src="/assets/img/1Aburrointeligente.png" alt="mascote squad9, donkey" width="200px" height="200px">
-                <!--ADICIONAR IMAGEM DO DONKEY-->   
                 <br>
                 <div class="texto">
                     <p>REGRAS DO JOGO</p>
+                    <ul>
+                        <li>Responda as perguntas corretamente</li>
+                        <li>Selecione apenas uma alternativa</li>
+                        <li>Voce tem <strong>30 segundos</strong> para responder!</li>
+                    </ul>
                 </div>
-                <!--ADICIONAR AS REGRAS DO JOGO-->
                 <button id="inicio-btn">INICIAR</button>    
             </section>
         </div>
 
-        <!-- pagina de escolha do tema -->
-         <!-- pagina de escolha do tema -->
-        <section id="escolha-tema" class= "esconder">
+        <!-- página de escolha do tema -->
+        <section id="escolha-tema" class="esconder">
             <h2>ESCOLHA UM TEMA</h2>
             <div class="temas">
                 <button id="tema-1" class="tema-btn">Futebol</button>
                 <button id="tema-2" class="tema-btn">Tecnologia e Inovação</button>
-                <button id="tema-3" class="tema-btn">Super Herois</button>
+                <button id="tema-3" class="tema-btn">Super Heróis</button>
                 <button id="tema-4" class="tema-btn">Filmes</button>
                 <button id="tema-5" class="tema-btn">Jogos</button>
                 <button id="tema-6" class="tema-btn">Música</button>
-                <!-- Conteúdo da escolha de tema -->
             </div>
-            <button id="escolha-tema-btn">Continuar</button>
         </section>
 
-        <!-- pagina do quiz -->
+        <!-- página do quiz -->
         <section id="quiz" class="esconder">
             <h2 id="quiz-titulo"></h2>
-            <div id="perguntas"></div> <!-- onde as perguntas aparecem -->
+            <div id="perguntas"></div>
+            <p id="contador"></p>
+            <p id="cronometro"></p>
             <button id="voltar-inicio-btn" class="esconder">Voltar ao Início</button>
+        </section>
+
+        <!-- página do squad9 -->
+        <section id="squad9" class="esconder">
+            <h2>Integrantes do Squad9</h2>
+            <ul>
+                <li>Aeverton - Futebol</li>
+                <li>Luis - Desenho Animado</li>
+                <li>Leiliane - Filmes</li>
+                <li>Letícia - Jogos</li>
+                <li>Rayane - Música</li>
+                <li>Jamille - Tecnologia e Inovação</li>
+            </ul>
+            <button id="voltar-btn">Voltar</button>
         </section>
     </div>
 
