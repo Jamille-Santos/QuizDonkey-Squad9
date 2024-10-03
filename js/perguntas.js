@@ -4,13 +4,13 @@ let perguntas = [];
 function loadPerguntas(tema) {
     if (tema === "tema-1") {
         perguntas = [
-            { pergunta: "Quem ganhou a Copa do Mundo de 2018?", opcoes: ["Alemanha", "Brasil", "França", "Argentina"], correta: 2 },
-            { pergunta: "Qual jogador tem o maior número de Bolas de Ouro?", opcoes: ["Pelé", "Cristiano Ronaldo", "Lionel Messi", "Zidane"], correta: 2 },
-            { pergunta: "Em que ano foi realizada a primeira Copa do Mundo?", opcoes: ["1930", "1940", "1950", "1960"], correta: 0 },
+            { pergunta: "Quem ganhou a Copa do Mundo de 2018?", opcoes: ["A) Alemanha", "B) Brasil", "C) França", "D) Argentina"], correta: 2 },
+            { pergunta: "Qual jogador tem o maior número de Bolas de Ouro?", opcoes: ["A) Pelé", "B) Cristiano Ronaldo", "C) Lionel Messi", "D) Zidane"], correta: 2 },
+            { pergunta: "Em que ano foi realizada a primeira Copa do Mundo?", opcoes: ["A) 1930", "B) 1940", "C) 1950", "D) 1960"], correta: 0 },
             
-            { pergunta: "Quando o gigantesco BOTAFOGO foi campeão brasileiro pela última vez?", opcoes: ["1997", "2000", " 1995", "1999"], correta: 2 },
-            { pergunta: "Qual foi o motivo para o segundo uniforme do Brasil ser azul?", opcoes: ["Por causa do céu azul", "Por causa da nossa senhora aparecida", "Por causa do hino do nacional", "por causa do Cruzeiro"], correta: 1},
-            { pergunta: "Quem é o maior artilheiro da seleção brasileira?", opcoes: ["Ronaldo", "Pelé", "Romário", "Neymar "], correta: 3 }
+            { pergunta: "Quando o gigantesco BOTAFOGO foi campeão brasileiro pela última vez?", opcoes: ["A) 1997", "B) 2000", "C)  1995", "D) 1999"], correta: 2 },
+            { pergunta: "Qual foi o motivo para o segundo uniforme do Brasil ser azul?", opcoes: ["A) Por causa do céu azul", "B) Por causa da nossa senhora aparecida", "C) Por causa do hino do nacional", "D) por causa do Cruzeiro"], correta: 1},
+            { pergunta: "Quem é o maior artilheiro da seleção brasileira?", opcoes: ["A) Ronaldo", "B) Pelé", "C) Romário", "D) Neymar "], correta: 3 }
                     ];
     } else if (tema === "tema-2") {
         perguntas = [
@@ -25,9 +25,9 @@ function loadPerguntas(tema) {
         ];
     } else if (tema === "tema-3") {
         perguntas = [
-            { pergunta: "Qual empresa desenvolveu o Windows?", opcoes: ["Apple", "Microsoft", "IBM", "Google"], correta: 1 },
-            { pergunta: "O que significa HTML?", opcoes: ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyper Transfer Markup Language"], correta: 0 },
-            { pergunta: "Qual foi o primeiro motor de busca da Internet?", opcoes: ["Google", "Yahoo", "Bing", "Archie"], correta: 3 }
+            { pergunta: "Quem é o arqui-inimigo do Batman?", opcoes: ["A) Lex Luthor", "B) Coringa", "C) Duas-Caras", "D) Thanos"], correta: 1 },
+            { pergunta: "Qual é o nome do lar dos super-heróis da Marvel conhecido como Vingadores", opcoes: ["A) Asgard", "B) Xandar", "C) Torre Dos Vingadores", "D) Gothan City"], correta: 2},
+            { pergunta: "Qual é o verdadeiro nome do Super Choque?", opcoes: ["A) Marta", "B) Virgil", "C) Norberto", "D) Archie"], correta: 1 }
         ];
     } else if (tema === "tema-4") {
         perguntas = [
@@ -40,6 +40,13 @@ function loadPerguntas(tema) {
             { pergunta: "1", opcoes: ["1997", "2000", " 1995", "1999"], correta: 2 },
             { pergunta: "2", opcoes: ["Por causa do céu azul", "Por causa da nossa senhora aparecida", "Por causa do hino do nacional", "por causa do Cruzeiro"], correta: 1},
             { pergunta: "3", opcoes: ["Ronaldo", "Pelé", "Romário", "Neymar "], correta: 3 }
+        ];
+    }else if (tema === "tema-6") {
+        perguntas = [
+            { pergunta: "Qual é a origem da capoeira?", opcoes: ["A) Brasil", "B) África", "C) Portugal", "D) Espanha"], correta: 0 },
+            { pergunta: "Qual é o principal objetivo da capoeira?", opcoes: ["A) Luta", "B) Dança e expressão cultural", "C) Combate militar", "D) Terapia"], correta: 1},
+            { pergunta: "Qual é o nome do instrumento de percussão frequentemente usado na capoeira?", opcoes: ["A) Berimbau", "B) Pandeiro", "C) Atabaque", "D) Cavaquinho"], correta: 0 },
+            { pergunta: "Como os praticantes de capoeira são chamados?", opcoes: ["A) Capoeiristas", "B) Lutadores", "C) Dançarinos", "D) Jogadores"], correta: 0 }        
         ];
    
     }
