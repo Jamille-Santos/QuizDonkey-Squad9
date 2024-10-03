@@ -200,3 +200,62 @@ body {
     font-size: 16px;
     padding: 8px 16px;
 }
+
+/* Estilos da página Squad9 */
+#squad9 {
+    padding: 20px;
+}
+
+#squad9 h2 {
+    font-size: 28px;
+    color: #C7AA79; /* Cor do título */
+    margin-bottom: 20px;
+}
+
+#squad9 ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+#squad9 ul li {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F5F5F5; /* Cor do texto */
+    background-color: rgba(47, 38, 32, 0.8); /* Fundo escuro com opacidade */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Aumentando o botão de voltar */
+#voltar-btn {
+    background-color: #2F2620;
+    color: #F5F5F5;
+    border: none;
+    padding: 15px 30px; /* Aumenta o tamanho do botão */
+    font-size: 18px; /* Aumenta a fonte */
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#voltar-btn:hover {
+    background-color: #C7AA79; /* Cor ao passar o mouse */
+    color: #2F2620;
+}
+
+/* Estilizando os botões que não estão estilizados */
+button {
+    background-color: #2F2620; /* Cor padrão */
+    color: #F5F5F5;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #C7AA79; /* Cor ao passar o mouse */
+}
