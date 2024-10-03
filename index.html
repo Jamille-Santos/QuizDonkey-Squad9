@@ -24,15 +24,16 @@
                     <ul>
                         <li>Responda as perguntas corretamente</li>
                         <li>Selecione apenas uma alternativa</li>
-                        <li>Voce tem <strong>30 segundos</strong> para responder!</li>
+                        <li>Tente não errar mais que 2vezes</li>
+                        <li>Você tem <strong>15 segundos</strong> para responder!</li>
                     </ul>
                 </div>
-                <label for="user-name">Digite seu nome:</label>
-    <input type="text" id="user-name" placeholder="Seu nome">
-    <button id="save-name-btn">Salvar Nome</button>
+                <label for="nome-jogador">Digite seu nome:</label>
+                <input type="text" id="nome-jogador" placeholder="Seu nome">
+                <button id="salvar-nome-btn">Salvar Nome</button>
 
-    <!-- Exibição do nome do usuário -->
-    <p id="user-greeting" class="esconder"></p>
+                <!-- Exibição do nome do usuário -->
+                <p id="saudacao" class="esconder"></p>
 
                 <button id="inicio-btn">INICIAR</button>    
             </section>
@@ -68,11 +69,18 @@
                 <li>Luis - Desenho Animado</li>
                 <li>Leiliane - Filmes</li>
                 <li>Letícia - Jogos</li>
-                <li>Rayane - Música</li>
+                <li>Rayane - Capoeira</li>
                 <li>Jamille - Tecnologia e Inovação</li>
             </ul>
             <button id="voltar-btn">Voltar</button>
         </section>
+
+        <!-- página de fim do jogo -->
+        <section id="game-over" class="esconder">
+            <h2 id="game-over-mensagem"></h2>
+            <button id="reiniciar-btn">Jogar Novamente</button>
+        </section>
+
     </div>
 
     <script src="/js/home.js"></script>

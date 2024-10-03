@@ -1,92 +1,102 @@
 let pontos = 0;
-let cronometroInterval;
-let tempoRestante = 30; // 30 segundos por pergunta
+let erros = 0;
+let cronometro;
+let tempoRestante = 15;
 
-// Função para iniciar o quiz
+//iniciar o quiz
 function iniciarQuiz() {
     document.getElementById('escolha-tema').classList.add('esconder');
     document.getElementById('quiz').classList.remove('esconder');
+    perguntaAtual = 0;
+    erros = 0;
     exibirPergunta();
-    iniciarCronometro();
 }
 
-// Função para exibir as perguntas
+//exibir a pergunta atual
 function exibirPergunta() {
-    let perguntaAtualObj = perguntas[perguntaAtual];
-    let perguntasDiv = document.getElementById('perguntas');
-    perguntasDiv.innerHTML = '';
-
-    let perguntaEl = document.createElement('p');
-    perguntaEl.textContent = perguntaAtualObj.pergunta;
-    perguntasDiv.appendChild(perguntaEl);
-
-    perguntaAtualObj.opcoes.forEach((opcao, index) => {
-        let opcaoBtn = document.createElement('button');
-        opcaoBtn.textContent = opcao;
-        opcaoBtn.classList.add('opcao-btn');
-        opcaoBtn.addEventListener('click', function() {
-            if (index === perguntaAtualObj.correta) {
-                opcaoBtn.classList.add('resposta-correta');
-                pontos++;
-            }
-            setTimeout(() => {
-                proximaPergunta();
-            }, 1000);
-        });
-        perguntasDiv.appendChild(opcaoBtn);
-    });
-}
-
-
-// Função para passar para a próxima pergunta
-function proximaPergunta() {
-    perguntaAtual++;
     if (perguntaAtual < perguntas.length) {
-        exibirPergunta();
+        // reinicia o cronômetro para cada pergunta
+        reiniciarCronometro();
+
+        const perguntaContainer = document.getElementById('perguntas');
+        perguntaContainer.innerHTML = ""; // limpar conteúdo anterior
+
+        const perguntaObj = perguntas[perguntaAtual];
+        const perguntaElemento = document.createElement('p');
+        perguntaElemento.innerText = perguntaObj.pergunta;
+        perguntaContainer.appendChild(perguntaElemento);
+
+        perguntaObj.opcoes.forEach((opcao, index) => {
+            const opcaoElemento = document.createElement('button');
+            opcaoElemento.innerText = opcao;
+            opcaoElemento.classList.add('opcao-btn');
+            opcaoElemento.addEventListener('click', function() {
+                verificarResposta(index);
+            });
+            perguntaContainer.appendChild(opcaoElemento);
+        });
     } else {
-        finalizarQuiz();
+        fimDoJogo();
     }
 }
 
-// Função para finalizar o quiz
-function finalizarQuiz() {
-    document.getElementById('quiz').classList.add('esconder');
-    document.getElementById('voltar-inicio-btn').classList.remove('esconder');
+//verificar a resposta
+function verificarResposta(opcaoSelecionada) {
+    if (opcaoSelecionada === perguntas[perguntaAtual].correta) {
+        alert("Resposta Correta!");
+    } else {
+        alert("Resposta Incorreta!");
+        erros++;
+        if (erros >= 2) {
+            fimDeJogoPorErros();
+            return;
+        }
+    }
+    perguntaAtual++;
+    exibirPergunta();
 }
 
-// Função para reiniciar o quiz
-function jogarNovamente() {
-    perguntaAtual = 0;
-    pontos = 0;
-    document.getElementById('inicio').classList.remove('esconder');
-    document.getElementById('voltar-inicio-btn').classList.add('esconder');
-    resetCronometro();
-}
+//reiniciar o cronômetro
+function reiniciarCronometro() {
+    clearInterval(cronometro); // limpa o cronômetro anterior
+    tempoRestante = 15; // reinicia para 15 segundos
+    document.getElementById('cronometro').innerText = `Tempo restante: ${tempoRestante}s`;
 
-// Função para iniciar o cronômetro
-function iniciarCronometro() {
-    tempoRestante = 30;
-    cronometroInterval = setInterval(function() {
-        document.getElementById('cronometro').textContent = `Tempo restante: ${tempoRestante} segundos`;
+    cronometro = setInterval(function() {
         tempoRestante--;
-        if (tempoRestante < 0) {
-            clearInterval(cronometroInterval);
-            proximaPergunta();
+        document.getElementById('cronometro').innerText = `Tempo restante: ${tempoRestante}s`;
+        if (tempoRestante <= 0) {
+            clearInterval(cronometro);
+            alert("Tempo esgotado!");
+            erros++;
+            if (erros >= 2) {
+                fimDeJogoPorErros();
+            } else {
+                perguntaAtual++;
+                exibirPergunta();
+            }
         }
     }, 1000);
 }
 
-// Função para resetar o cronômetro
-function resetCronometro() {
-    clearInterval(cronometroInterval);
-    document.getElementById('cronometro').textContent = '';
+// finalizar o jogo por erros
+function fimDeJogoPorErros() {
+    clearInterval(cronometro);
+    document.getElementById('quiz').classList.add('esconder');
+    document.getElementById('game-over').classList.remove('esconder');
+    document.getElementById('game-over-mensagem').innerText = `Game Over, ${nomeUsuario}. Você errou 2 vezes.`;
 }
 
-// Adicionando um evento para salvar o nome e exibi-lo
-document.getElementById('save-name-btn').addEventListener('click', function() {
-    const userName = document.getElementById('user-name').value;
-    if (userName) {
-        document.getElementById('user-greeting').textContent = `Olá, ${userName}!`;
-        document.getElementById('user-greeting').classList.remove('esconder');
-    }
+// finalizar o jogo ao completar o quiz
+function fimDoJogo() {
+    clearInterval(cronometro);
+    document.getElementById('quiz').classList.add('esconder');
+    document.getElementById('game-over').classList.remove('esconder');
+    document.getElementById('game-over-mensagem').innerText = `Parabéns, ${nomeUsuario}! Você completou o quiz.`;
+}
+
+// reiniciar o jogo
+document.getElementById('reiniciar-btn').addEventListener('click', function() {
+    document.getElementById('game-over').classList.add('esconder');
+    document.getElementById('inicio').classList.remove('esconder');
 });

@@ -166,7 +166,7 @@ body {
     display: none;
 }
 
-#user-name {
+#nome-jogador {
     background-color:#2F2620 ;
     color: #F5F5F5;
     border: none;
@@ -179,13 +179,13 @@ body {
     text-align: center;
 }
 
-#user-name::placeholder {
+#nome-jogador::placeholder {
     color: #C7AA79; /* Cor do placeholder */
     opacity: 0.8; /* Transparência do placeholder */
 }
 
 /* Estilo do botão "Salvar Nome" */
-#save-name-btn {
+#salvar-nome-btn {
     background-color: #C7AA79;
     color: #2F2620;
     border: none;
@@ -196,7 +196,7 @@ body {
     margin-top: 10px;
 }
 
-#save-name-btn {
+#salvar-nome-btn {
     font-size: 16px;
     padding: 8px 16px;
 }

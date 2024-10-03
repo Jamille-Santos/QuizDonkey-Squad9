@@ -1,6 +1,3 @@
-let perguntaAtual = 0;
-let perguntas = [];
-
 function loadPerguntas(tema) {
     if (tema === "tema-1") {
         perguntas = [
@@ -58,5 +55,5 @@ function loadPerguntas(tema) {
         ];
    
     }
-    
+    perguntaAtual = 0;
     }
