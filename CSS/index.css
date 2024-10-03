@@ -259,3 +259,12 @@ button {
 button:hover {
     background-color: #C7AA79; /* Cor ao passar o mouse */
 }
+
+.texto ul {
+    list-style-type: none; /* Remove os pontinhos da lista */
+    padding: 0; /* Remove o espaçamento padrão à esquerda */
+}
+
+.texto ul li {
+    margin-bottom: 10px; /* Ajuste de espaçamento entre os itens da lista */
+}
