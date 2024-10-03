@@ -1,7 +1,7 @@
 let pontos = 0;
 let erros = 0;
 let cronometro;
-let tempoRestante = 15;
+let tempoRestante = 30;
 
 //iniciar o quiz
 function iniciarQuiz() {
@@ -61,7 +61,7 @@ function verificarResposta(opcaoSelecionada) {
 //reiniciar o cronômetro
 function reiniciarCronometro() {
     clearInterval(cronometro); // limpa o cronômetro anterior
-    tempoRestante = 15; // reinicia para 15 segundos
+    tempoRestante = 30; // reinicia para 30 segundos
     document.getElementById('cronometro').innerText = `Tempo restante: ${tempoRestante}s`;
 
     cronometro = setInterval(function() {
