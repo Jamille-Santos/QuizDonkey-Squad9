@@ -37,7 +37,7 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: url("/assets/img/fliperama.jpeg") no-repeat center center/cover;
-    background-size: auto;
+    background-size: 1800px 800px; /* Define um tamanho fixo */
     border-radius: 0;
     text-align: center;
     display: flex;
