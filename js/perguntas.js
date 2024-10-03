@@ -20,7 +20,7 @@ function loadPerguntas(tema) {
             
             { pergunta: "Qual foi o primeiro veículo elétrico de produção em massa?", opcoes: ["A) Nissan Leaf", "B) Tesla Model S", "C) Chevrolet Volt", "D) Toyota Prius"], correta: 0},
             { pergunta: "Qual tecnologia está por trás das criptomoedas como o Bitcoin?", opcoes: ["A)Inteligência Artificial", "B) Blockchain", "C) Computação Quântica", "D) Cloud Computing"], correta: 1},
-            { pergunta: "Quem é considerado o ¨pai¨ da Inteligência Artificial moderna?", opcoes: ["A) Alan Turing", "B) John McCarthy", "C) Elon Musk", "D) Steve Jobs"], correta: 1 }
+            { pergunta: "Quem é considerado o “pai” da Inteligência Artificial moderna?", opcoes: ["A) Alan Turing", "B) John McCarthy", "C) Elon Musk", "D) Steve Jobs"], correta: 1 }
             
         ];
     } else if (tema === "tema-3") {
@@ -31,9 +31,13 @@ function loadPerguntas(tema) {
         ];
     } else if (tema === "tema-4") {
         perguntas = [
-            { pergunta: "Quem é o arqui-inimigo do Batman?", opcoes: ["Lex Luthor", "Coringa", "Duas-Caras", "Thanos"], correta: 1 },
-            { pergunta: "Qual é o nome do lar dos super-heróis da Marvel conhecido como Vingadores", opcoes: ["Asgard", "Xandar", "Torre Dos Vingadores", "Gothan City"], correta: 2},
-            { pergunta: "Qual é o verdadeiro nome do Super Choque?", opcoes: ["Marta", "Virgil", "Norberto", "Archie"], correta: 1 }
+            { pergunta: "Qual é o nome do personagem principal em “O Rei Leão”?", opcoes: ["A) Simba", "B) Mufasa", "C) Scar", "D) Zazu"], correta: 0 },
+            { pergunta: "Em que filme uma jovem chamada Bella se apaixona por um vampiro?", opcoes: ["A) Crepúsculo", "B) Amanhecer", "C) Harry Potter", "D) A Garota da Capa Vermelha"], correta: 0 },
+            { pergunta: "No Filme os vingadores Qual personagem diz a famosa frase: “Eu sou o que sou”? ", opcoes: ["A) Thor", "B) Hulk", "C) Loki", "D) Capitão América"], correta: 2 },
+
+            { pergunta: "No filme Harry Potter Qual objeto mágico Harry precisa destruir para derrotar Voldemort?", opcoes: ["A) A varinha das varinhas", "B) O diário de Tom Riddle", "C) As horcruxes", "D) A pedra filosofal"], correta: 2 },
+            { pergunta: "No filme “Titanic” Qual é a causa do naufrágio do Titanic?", opcoes: ["A) Um incêndio", "B) Uma colisão com um iceberg", "C) Uma explosão", "D) Falha mecânica"], correta: 1 },
+            { pergunta: "No filme “Barbie” Qual famoso artista da música contribui com uma canção para a trilha sonora do filme? ", opcoes: ["A) Taylor Swift", "B) Dua Lipa", "C) Billie Eilish", "D) Ariana Grande"], correta: 1 }
         ];
     }else if (tema === "tema-5") {
         perguntas = [
@@ -46,7 +50,11 @@ function loadPerguntas(tema) {
             { pergunta: "Qual é a origem da capoeira?", opcoes: ["A) Brasil", "B) África", "C) Portugal", "D) Espanha"], correta: 0 },
             { pergunta: "Qual é o principal objetivo da capoeira?", opcoes: ["A) Luta", "B) Dança e expressão cultural", "C) Combate militar", "D) Terapia"], correta: 1},
             { pergunta: "Qual é o nome do instrumento de percussão frequentemente usado na capoeira?", opcoes: ["A) Berimbau", "B) Pandeiro", "C) Atabaque", "D) Cavaquinho"], correta: 0 },
-            { pergunta: "Como os praticantes de capoeira são chamados?", opcoes: ["A) Capoeiristas", "B) Lutadores", "C) Dançarinos", "D) Jogadores"], correta: 0 }        
+
+            { pergunta: "Como os praticantes de capoeira são chamados?", opcoes: ["A) Capoeiristas", "B) Lutadores", "C) Dançarinos", "D) Jogadores"], correta: 0 },        
+            { pergunta: "Qual é um dos principais elementos culturais associados à capoeira?", opcoes: ["A) Samba de roda", "B) Maculelê", "C) Carimbó", "D) Todas as alternativas"], correta: 3 },
+            { pergunta: "Qual é a vestimenta tradicional utilizada na capoeira?", opcoes: ["A) Terno e gravata", "B) Camiseta e calça branca", "C) Roupa de ginástica", "D) Traje de banho"], correta: 1 }        
+        
         ];
    
     }

@@ -19,9 +19,11 @@ document.getElementById('voltar-inicio-btn').addEventListener('click', function(
 });
 
 document.getElementById('squad9-btn').addEventListener('click', function() {
-    document.querySelector('.container').classList.add('esconder');
+    document.querySelector('#inicio').classList.add('esconder');
+    document.querySelector('#escolha-tema').classList.add('esconder');
     document.getElementById('squad9').classList.remove('esconder');
 });
+
 
 document.getElementById('voltar-btn').addEventListener('click', function() {
     document.getElementById('squad9').classList.add('esconder');
