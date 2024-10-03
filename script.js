@@ -9,6 +9,7 @@ function iniciarQuiz() {
     document.getElementById('quiz').classList.remove('esconder');
     perguntaAtual = 0;
     erros = 0;
+    pontos = 0; // reinicia os pontos
     exibirPergunta();
 }
 
@@ -44,6 +45,7 @@ function exibirPergunta() {
 function verificarResposta(opcaoSelecionada) {
     if (opcaoSelecionada === perguntas[perguntaAtual].correta) {
         alert("Resposta Correta!");
+        pontos++; // incrementa os pontos
     } else {
         alert("Resposta Incorreta!");
         erros++;
@@ -92,7 +94,7 @@ function fimDoJogo() {
     clearInterval(cronometro);
     document.getElementById('quiz').classList.add('esconder');
     document.getElementById('game-over').classList.remove('esconder');
-    document.getElementById('game-over-mensagem').innerText = `Parabéns, ${nomeUsuario}! Você completou o quiz.`;
+    document.getElementById('game-over-mensagem').innerText = `Parabéns, ${nomeUsuario}! Você completou o quiz. Você fez ${pontos} ponto(s).`; // Mostra os pontos
 }
 
 // reiniciar o jogo
