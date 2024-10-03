@@ -45,7 +45,7 @@ function loadPerguntas(tema) {
             { pergunta: "Como os praticantes de capoeira são chamados?", opcoes: ["A) Capoeiristas", "B) Lutadores", "C) Dançarinos", "D) Jogadores"], correta: 0 },        
             { pergunta: "Qual é um dos principais elementos culturais associados à capoeira?", opcoes: ["A) Samba de roda", "B) Maculelê", "C) Carimbó", "D) Todas as alternativas"], correta: 3 },
             { pergunta: "Qual é a vestimenta tradicional utilizada na capoeira?", opcoes: ["A) Terno e gravata", "B) Camiseta e calça branca", "C) Roupa de ginástica", "D) Traje de banho"], correta: 1 }        
-
+        ];
     }else if (tema === "tema-6") {
         perguntas = [
             { pergunta: "Qual é a origem da capoeira?", opcoes: ["A) Brasil", "B) África", "C) Portugal", "D) Espanha"], correta: 0 },
