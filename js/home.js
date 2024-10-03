@@ -2,6 +2,25 @@ let nomeUsuario = "";
 let perguntaAtual = 0;
 let perguntas = [];
 
+// Iniciar música ao carregar a página
+window.addEventListener('load', function() {
+    let musica = document.getElementById('musica-quiz');
+    let playPauseBtn = document.getElementById('play-pause-btn');
+
+    musica.play(); // começar tocando automaticamente
+
+    // alternar entre tocar e pausar
+    playPauseBtn.addEventListener('click', function() {
+        if (musica.paused) {
+            musica.play(); 
+            playPauseBtn.innerText = 'Pause'; 
+        } else {
+            musica.pause(); 
+            playPauseBtn.innerText = 'Play';
+        }
+    });
+});
+
 // salvar nome
 document.getElementById('salvar-nome-btn').addEventListener('click', function() {
     const nomeInput = document.getElementById('nome-jogador').value.trim();
