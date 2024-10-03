@@ -36,16 +36,16 @@ function loadPerguntas(tema) {
             { pergunta: "No filme “Titanic” Qual é a causa do naufrágio do Titanic?", opcoes: ["A) Um incêndio", "B) Uma colisão com um iceberg", "C) Uma explosão", "D) Falha mecânica"], correta: 1 },
             { pergunta: "No filme “Barbie” Qual famoso artista da música contribui com uma canção para a trilha sonora do filme? ", opcoes: ["A) Taylor Swift", "B) Dua Lipa", "C) Billie Eilish", "D) Ariana Grande"], correta: 1 }
         ];
-    }else if (tema === "tema-5") {
-        perguntas = [
-            { pergunta: "Qual é a origem da capoeira?", opcoes: ["A) Brasil", "B) África", "C) Portugal", "D) Espanha"], correta: 0 },
-            { pergunta: "Qual é o principal objetivo da capoeira?", opcoes: ["A) Luta", "B) Dança e expressão cultural", "C) Combate militar", "D) Terapia"], correta: 1},
-            { pergunta: "Qual é o nome do instrumento de percussão frequentemente usado na capoeira?", opcoes: ["A) Berimbau", "B) Pandeiro", "C) Atabaque", "D) Cavaquinho"], correta: 0 },
+    // }else if (tema === "tema-5") {
+    //     perguntas = [
+    //         { pergunta: "Qual o nome do protagonista da série de jogos "The Legend of Zelda¨¨", opcoes: ["A) Brasil", "B) África", "C) Portugal", "D) Espanha"], correta: 0 },
+    //         { pergunta: "Qual é o principal objetivo da capoeira?", opcoes: ["A) Luta", "B) Dança e expressão cultural", "C) Combate militar", "D) Terapia"], correta: 1},
+    //         { pergunta: "Qual é o nome do instrumento de percussão frequentemente usado na capoeira?", opcoes: ["A) Berimbau", "B) Pandeiro", "C) Atabaque", "D) Cavaquinho"], correta: 0 },
 
-            { pergunta: "Como os praticantes de capoeira são chamados?", opcoes: ["A) Capoeiristas", "B) Lutadores", "C) Dançarinos", "D) Jogadores"], correta: 0 },        
-            { pergunta: "Qual é um dos principais elementos culturais associados à capoeira?", opcoes: ["A) Samba de roda", "B) Maculelê", "C) Carimbó", "D) Todas as alternativas"], correta: 3 },
-            { pergunta: "Qual é a vestimenta tradicional utilizada na capoeira?", opcoes: ["A) Terno e gravata", "B) Camiseta e calça branca", "C) Roupa de ginástica", "D) Traje de banho"], correta: 1 }        
-        ];
+    //         { pergunta: "Como os praticantes de capoeira são chamados?", opcoes: ["A) Capoeiristas", "B) Lutadores", "C) Dançarinos", "D) Jogadores"], correta: 0 },        
+    //         { pergunta: "Qual é um dos principais elementos culturais associados à capoeira?", opcoes: ["A) Samba de roda", "B) Maculelê", "C) Carimbó", "D) Todas as alternativas"], correta: 3 },
+    //         { pergunta: "Qual é a vestimenta tradicional utilizada na capoeira?", opcoes: ["A) Terno e gravata", "B) Camiseta e calça branca", "C) Roupa de ginástica", "D) Traje de banho"], correta: 1 }        
+    //     ];
     }else if (tema === "tema-6") {
         perguntas = [
             { pergunta: "Qual é a origem da capoeira?", opcoes: ["A) Brasil", "B) África", "C) Portugal", "D) Espanha"], correta: 0 },
