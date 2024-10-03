@@ -38,10 +38,14 @@ function loadPerguntas(tema) {
         ];
     }else if (tema === "tema-5") {
         perguntas = [
-            { pergunta: "1", opcoes: ["1997", "2000", " 1995", "1999"], correta: 2 },
-            { pergunta: "2", opcoes: ["Por causa do céu azul", "Por causa da nossa senhora aparecida", "Por causa do hino do nacional", "por causa do Cruzeiro"], correta: 1},
-            { pergunta: "3", opcoes: ["Ronaldo", "Pelé", "Romário", "Neymar "], correta: 3 }
-        ];
+            { pergunta: "Qual é a origem da capoeira?", opcoes: ["A) Brasil", "B) África", "C) Portugal", "D) Espanha"], correta: 0 },
+            { pergunta: "Qual é o principal objetivo da capoeira?", opcoes: ["A) Luta", "B) Dança e expressão cultural", "C) Combate militar", "D) Terapia"], correta: 1},
+            { pergunta: "Qual é o nome do instrumento de percussão frequentemente usado na capoeira?", opcoes: ["A) Berimbau", "B) Pandeiro", "C) Atabaque", "D) Cavaquinho"], correta: 0 },
+
+            { pergunta: "Como os praticantes de capoeira são chamados?", opcoes: ["A) Capoeiristas", "B) Lutadores", "C) Dançarinos", "D) Jogadores"], correta: 0 },        
+            { pergunta: "Qual é um dos principais elementos culturais associados à capoeira?", opcoes: ["A) Samba de roda", "B) Maculelê", "C) Carimbó", "D) Todas as alternativas"], correta: 3 },
+            { pergunta: "Qual é a vestimenta tradicional utilizada na capoeira?", opcoes: ["A) Terno e gravata", "B) Camiseta e calça branca", "C) Roupa de ginástica", "D) Traje de banho"], correta: 1 }        
+
     }else if (tema === "tema-6") {
         perguntas = [
             { pergunta: "Qual é a origem da capoeira?", opcoes: ["A) Brasil", "B) África", "C) Portugal", "D) Espanha"], correta: 0 },
