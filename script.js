@@ -81,3 +81,12 @@ function resetCronometro() {
     clearInterval(cronometroInterval);
     document.getElementById('cronometro').textContent = '';
 }
+
+// Adicionando um evento para salvar o nome e exibi-lo
+document.getElementById('save-name-btn').addEventListener('click', function() {
+    const userName = document.getElementById('user-name').value;
+    if (userName) {
+        document.getElementById('user-greeting').textContent = `Olá, ${userName}!`;
+        document.getElementById('user-greeting').classList.remove('esconder');
+    }
+});
